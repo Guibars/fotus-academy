@@ -33,7 +33,7 @@ export function Sidebar({ currentTab, onSelectTab, mobile = false }: SidebarProp
           aria-current={currentTab === id ? 'page' : undefined}
           className={`sidebar-link${currentTab === id ? ' sidebar-link--active' : ''}`}
         >
-          <span className="sidebar-icon"><ToolIcon tab={id} className="w-7 h-7" /></span>
+          <span className="sidebar-icon"><ToolIcon tab={id} className="w-6 h-6" /></span>
           <span className="sidebar-label">{label}</span>
         </button>)}
       </nav>

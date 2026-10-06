@@ -25,7 +25,8 @@ export const COURSES_DATA: VideoCourse[] = [
     "subtitle": "Como funciona no sistema híbrido",
     "category": "backup",
     "coverId": 3,
-    "coverUrl": "assets/covers/backup-baterias.png"
+    "coverUrl": "assets/covers/backup-baterias.png",
+    "videoUrl": `${import.meta.env.BASE_URL}assets/videos/backup-baterias.mp4`
   },
   {
     "id": "time-shifting",
