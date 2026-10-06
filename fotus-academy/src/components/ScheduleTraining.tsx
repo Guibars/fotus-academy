@@ -1,0 +1,5 @@
+import React from 'react';
+import { CalendarCheck, ArrowUpRight } from 'lucide-react';
+export function ScheduleTraining() {
+  return <section className="p-6 lg:p-8 space-y-6"><header><h1 className="text-2xl font-black text-slate-800">Agendar Treinamento</h1><p className="text-sm text-slate-500 mt-1">Treinamentos Fotus</p></header><div className="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm"><CalendarCheck className="text-[#0d518e] mb-4" size={32} /><h2 className="font-bold text-lg text-slate-800">Consulte a programação de treinamentos</h2><p className="text-sm text-slate-500 mt-2 max-w-lg">Ainda não há uma agenda cadastrada nesta plataforma. Consulte os canais Fotus para conhecer as datas e as condições de inscrição.</p><a href="https://energia.fotus.com.br/conecta-fotus/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 mt-5 px-5 py-3 rounded-xl bg-[#0d518e] text-white text-xs font-bold">Acessar Conecta Fotus<ArrowUpRight size={16} /></a></div></section>;
+}
