@@ -15,13 +15,14 @@ export default function App() {
   const [currentTab, setCurrentTab] = useState<TabId>('dashboard');
   const [searchQuery, setSearchQuery] = useState('');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [course, setCourse] = useState<VideoCourse | null>(null);
   const selectTab = (tab: TabId) => { setCurrentTab(tab); setMobileMenuOpen(false); setSearchQuery(''); };
   const handleSearch = (query: string) => { setSearchQuery(query); if (query.trim()) setCurrentTab('cursos'); };
   return <div className="min-h-screen bg-[#EEF4FA] text-slate-800 font-['Plus_Jakarta_Sans',sans-serif]">
     <div className="lg:hidden bg-white border-b border-slate-200 px-4 py-3 flex items-center justify-between sticky top-0 z-40"><button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Abrir menu" aria-expanded={mobileMenuOpen} className="p-2 rounded-xl text-slate-600">{mobileMenuOpen ? <X /> : <Menu />}</button><FotusLogo className="h-12 w-auto" /><div className="w-10" /></div>
     <div className="flex min-h-screen">
-      <div className="hidden lg:block"><Sidebar currentTab={currentTab} onSelectTab={selectTab} /></div>
+      <div className="hidden lg:block shrink-0"><Sidebar currentTab={currentTab} onSelectTab={selectTab} collapsed={sidebarCollapsed} onToggleCollapsed={() => setSidebarCollapsed(value => !value)} /></div>
       {mobileMenuOpen && <div className="fixed inset-0 z-50 lg:hidden flex"><button className="fixed inset-0 bg-black/40 backdrop-blur-sm" aria-label="Fechar menu" onClick={() => setMobileMenuOpen(false)} /><div className="relative z-10 bg-white h-full overflow-y-auto shadow-2xl"><Sidebar currentTab={currentTab} onSelectTab={selectTab} /></div></div>}
       <div className="flex-1 min-w-0">
         <Header searchQuery={searchQuery} onSearchChange={handleSearch} onSelectTab={selectTab} />

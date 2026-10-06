@@ -3,7 +3,7 @@ import { VideoCourse } from '../types';
 import { COURSES_DATA } from '../data/coursesData';
 import { StoryCoverCard } from './StoryCoverCard';
 interface VideosSectionProps { onPlayCourse: (course: VideoCourse) => void; onOpenStories?: (course: VideoCourse) => void; searchFilter?: string; }
-const categories = [{ id: 'todos', label: 'Todos os módulos' }, { id: 'dimensionamento', label: 'Dimensionamento' }, { id: 'offgrid', label: 'Off-Grid' }, { id: 'backup', label: 'Backup com Baterias' }, { id: 'gestao', label: 'Time Shifting' }, { id: 'hardware', label: 'Porta GEN' }];
+const categories = [{ id: 'todos', label: 'Todos os módulos' }, { id: 'dimensionamento', label: 'Dimensionamento' }, { id: 'offgrid', label: 'Off-Grid' }, { id: 'backup', label: 'Backup com Baterias' }, { id: 'gestao', label: 'Time Shifting' }, { id: 'hardware', label: 'Porta GEN' }, { id: 'mobilidade', label: 'Mobilidade elétrica' }, { id: 'armazenamento', label: 'Armazenamento C&I' }];
 export function VideosSection({ onPlayCourse, searchFilter = '' }: VideosSectionProps) {
   const [category, setCategory] = useState('todos');
   const query = searchFilter.trim().toLocaleLowerCase('pt-BR');

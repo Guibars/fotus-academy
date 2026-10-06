@@ -642,7 +642,7 @@ const SimulationScreen: React.FC<SimulationScreenProps> = ({ equipmentList, setE
                                     flex items-center justify-center gap-3 shadow-[0_10px_20px_-5px_rgba(250,181,21,0.4)]
                                     ${isCalculating 
                                         ? 'bg-slate-100 cursor-not-allowed border border-slate-200 text-slate-500' 
-                                        : 'bg-gradient-to-br from-[#0a3560]/90 to-[#020617]/90 backdrop-blur-xl border border-[#FAB515] text-[#0d518e] cursor-pointer hover:scale-[1.01] hover:-translate-y-1'
+                                        : 'bg-[#0d518e] border border-[#0d518e] text-white cursor-pointer hover:bg-[#093c6b] hover:scale-[1.01] hover:-translate-y-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0d518e]'
                                     }
                                 `}
                             >
@@ -660,7 +660,7 @@ const SimulationScreen: React.FC<SimulationScreenProps> = ({ equipmentList, setE
                                         </>
                                     ) : (
                                         <>
-                                            <SparklesIcon className="w-5 h-5 text-[#0d518e]" />
+                                            <SparklesIcon className="w-5 h-5 text-[#fab515]" />
                                             Dimensionar Sistema
                                         </>
                                     )}

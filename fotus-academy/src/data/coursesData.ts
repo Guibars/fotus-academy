@@ -42,6 +42,26 @@ export const COURSES_DATA: VideoCourse[] = [
     "category": "hardware",
     "coverId": 5,
     "coverUrl": "assets/covers/porta-gen.png"
+  },
+  {
+    "id": "carregador-dc-beny",
+    "title": "Carregador DC Beny",
+    "subtitle": "Solução de recarga rápida para veículos elétricos",
+    "category": "mobilidade",
+    "coverId": 6,
+    "coverUrl": "assets/covers/carregador-dc-beny.png",
+    "coverWidth": 1122,
+    "coverHeight": 1402
+  },
+  {
+    "id": "chint-bess-ci",
+    "title": "CHINT BESS C&I",
+    "subtitle": "CPS ES-125KW-261KWH — Sistema de armazenamento de energia para aplicações comerciais e industriais",
+    "category": "armazenamento",
+    "coverId": 7,
+    "coverUrl": "assets/covers/chint-bess-ci.png",
+    "coverWidth": 1122,
+    "coverHeight": 1402
   }
 ];
 

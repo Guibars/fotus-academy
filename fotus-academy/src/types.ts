@@ -12,10 +12,12 @@ export interface VideoCourse {
   id: string;
   title: string;
   subtitle: string;
-  coverId: 1 | 2 | 3 | 4 | 5;
+  coverId: number;
   coverUrl: string;
+  coverWidth?: number;
+  coverHeight?: number;
   videoUrl?: string;
-  category: 'dimensionamento' | 'offgrid' | 'backup' | 'gestao' | 'hardware';
+  category: 'dimensionamento' | 'offgrid' | 'backup' | 'gestao' | 'hardware' | 'mobilidade' | 'armazenamento';
 }
 
 export interface TrainingEvent {

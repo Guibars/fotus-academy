@@ -16,7 +16,7 @@ Envie `package.json` e `package-lock.json` juntos ao Git. No Vercel, use o prese
 
 ## Capas e conteúdos
 
-As cinco capas originais estão em `public/assets/covers`, com exibição inteira em retrato 9:16. A logo fornecida está em `public/assets/fotus-academy.png`.
+As sete capas originais estão em `public/assets/covers`, com exibição inteira em retrato e proporção preservada, incluindo Carregador DC Beny e CHINT BESS C&I. A logo fornecida está em `public/assets/fotus-academy.png`. O menu lateral pode ser minimizado para mostrar apenas os ícones e expandido pelo mesmo botão.
 
 Os títulos e subtítulos em `src/data/coursesData.ts` correspondem às capas. Os arquivos de vídeo não foram fornecidos; cadastre uma URL real no campo `videoUrl` de cada módulo para habilitar o player. A plataforma não simula reprodução de vídeo, avaliações, progresso, certificados, usuários ou inscrições.
 
