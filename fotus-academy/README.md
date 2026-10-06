@@ -12,6 +12,8 @@ Use Node.js 22.18 ou superior. Em um ambiente de desenvolvimento com as dependê
 
 Não é necessário configurar uma chave de API para estas ferramentas. `node_modules`, `dist` e outros arquivos gerados não devem ser enviados ao Git.
 
+Envie `package.json` e `package-lock.json` juntos ao Git. No Vercel, use o preset Vite, o comando de build `npm run build` e o diretório de saída `dist`; esse diretório será gerado pelo Vercel durante o deploy, sem precisar existir no repositório.
+
 ## Capas e conteúdos
 
 As cinco capas originais estão em `public/assets/covers`, com exibição inteira em retrato 9:16. A logo fornecida está em `public/assets/fotus-academy.png`.
