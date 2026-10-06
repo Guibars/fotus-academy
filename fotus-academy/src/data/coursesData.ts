@@ -25,7 +25,9 @@ export const COURSES_DATA: VideoCourse[] = [
     "subtitle": "Como funciona no sistema híbrido",
     "category": "backup",
     "coverId": 3,
-    "coverUrl": "assets/covers/backup-baterias.png",
+    "coverUrl": "assets/covers/backup-baterias-secpower.png",
+    "coverWidth": 941,
+    "coverHeight": 1672,
     "videoUrl": `${import.meta.env.BASE_URL}assets/videos/backup-baterias.mp4`
   },
   {
