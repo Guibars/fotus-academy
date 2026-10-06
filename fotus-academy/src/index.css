@@ -1,5 +1,45 @@
 @import "tailwindcss";
 
+:root { --fotus-blue: #0d518e; --fotus-yellow: #fab515; }
+
+/* The expanded rail overlays the page so hover never moves its contents. */
+.sidebar-dock { position: sticky; top: 20px; width: 100px; height: calc(100dvh - 40px); z-index: 45; }
+.sidebar-pill {
+  width: 76px; margin-left: 12px; padding: 12px 9px 16px;
+  background: #fff; border: 1px solid #dce7f1; border-radius: 40px;
+  box-shadow: 0 12px 36px rgb(13 81 142 / 0.08);
+  max-height: 100%; overflow-x: hidden; overflow-y: auto;
+  transition: width 240ms ease, border-radius 240ms ease, box-shadow 240ms ease;
+}
+.sidebar-brand { position: relative; height: 76px; margin-bottom: 12px; }
+.sidebar-symbol { position: absolute; width: 48px; height: 48px; object-fit: contain; top: 14px; left: 4px; transition: opacity 160ms ease; }
+.sidebar-brand .sidebar-wordmark { position: absolute; width: 180px; height: 66px; max-width: none; left: 28px; top: 5px; opacity: 0; transition: opacity 160ms ease; }
+.sidebar-nav { display: flex; flex-direction: column; gap: 8px; }
+.sidebar-link { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 56px; padding: 6px; border-radius: 28px; color: var(--fotus-blue); text-align: left; transition: background 160ms ease; }
+.sidebar-icon { width: 44px; height: 44px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 50%; }
+.sidebar-label { opacity: 0; white-space: nowrap; font-size: 13px; font-weight: 600; transition: opacity 160ms ease; }
+.sidebar-link:hover { background: #f1f6fb; }
+.sidebar-link--active { background: #eaf2fb; }
+.sidebar-link--active .sidebar-icon { background: var(--fotus-blue); color: #fff; }
+.sidebar-link:focus-visible, .calendar-day:focus-visible { outline: 2px solid var(--fotus-blue); outline-offset: -2px; }
+.sidebar-dock--mobile { position: static; height: 100dvh; width: 272px; }
+.sidebar-dock--mobile .sidebar-pill { width: 272px; height: 100%; margin: 0; border-radius: 0; padding-top: 24px; }
+.sidebar-dock--mobile .sidebar-label, .sidebar-dock--mobile .sidebar-wordmark { opacity: 1; }
+.sidebar-dock--mobile .sidebar-symbol { opacity: 0; }
+.sidebar-dock:not(.sidebar-dock--mobile):has(:focus-visible) .sidebar-pill { width: 272px; border-radius: 32px; box-shadow: 0 16px 48px rgb(13 81 142 / 0.16); }
+.sidebar-dock:not(.sidebar-dock--mobile):has(:focus-visible) .sidebar-label,
+.sidebar-dock:not(.sidebar-dock--mobile):has(:focus-visible) .sidebar-wordmark { opacity: 1; }
+.sidebar-dock:not(.sidebar-dock--mobile):has(:focus-visible) .sidebar-symbol { opacity: 0; }
+@media (hover: hover) {
+  .sidebar-dock:not(.sidebar-dock--mobile):hover .sidebar-pill { width: 272px; border-radius: 32px; box-shadow: 0 16px 48px rgb(13 81 142 / 0.16); }
+  .sidebar-dock:not(.sidebar-dock--mobile):hover .sidebar-label,
+  .sidebar-dock:not(.sidebar-dock--mobile):hover .sidebar-wordmark { opacity: 1; }
+  .sidebar-dock:not(.sidebar-dock--mobile):hover .sidebar-symbol { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sidebar-pill, .sidebar-symbol, .sidebar-wordmark, .sidebar-label, .sidebar-link { transition: none; }
+}
+
 button, a, input, select { -webkit-tap-highlight-color: transparent; }
 button:not(:disabled), a { cursor: pointer; }
 .conecta-tool .academy-tool-card {
@@ -14,3 +54,4 @@ button:not(:disabled), a { cursor: pointer; }
 @media (hover: none) {
   .conecta-tool .equipment-specs { max-height: none; opacity: 1; }
 }
+

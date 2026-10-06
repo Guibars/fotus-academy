@@ -65,6 +65,7 @@ export const COURSES_DATA: VideoCourse[] = [
   }
 ];
 
+// Real training dates only. Use YYYY-MM-DD in `date` so the calendar can mark each day.
 export const TRAINING_EVENTS: TrainingEvent[] = [];
 export const USER_CERTIFICATES: Certificate[] = [];
 export const CRM_LEADS_SAMPLE: CRMLead[] = [];
