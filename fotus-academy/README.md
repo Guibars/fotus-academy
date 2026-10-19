@@ -22,7 +22,7 @@ O menu lateral tem formato de pílula, começa recolhido e abre ao passar o mous
 
 O calendário compacto do dashboard lê `TRAINING_EVENTS`, em `src/data/coursesData.ts`. Cadastre apenas eventos reais, com `date` no formato `YYYY-MM-DD`. Os dias com eventos recebem um marcador amarelo; selecionar um dia exibe seus treinamentos. Sem eventos cadastrados, o calendário informa que não há programação cadastrada naquele mês.
 
-Os títulos e subtítulos em `src/data/coursesData.ts` correspondem às capas. O vídeo fornecido de Backup com Baterias está em `public/assets/videos/backup-baterias.mp4` e vinculado ao card correspondente. Para os outros módulos, cadastre uma URL real no campo `videoUrl` para habilitar o player. A plataforma não simula reprodução de vídeo, avaliações, progresso, certificados, usuários ou inscrições.
+Os títulos e subtítulos em `src/data/coursesData.ts` correspondem às capas. O primeiro card é Conheça o Conecta Fotus, com capa `public/assets/covers/conheca-conecta-fotus.png` e vídeo `public/assets/videos/conheca-conecta-fotus.mp4`. O segundo card é Conheça + Solplanet, com capa `public/assets/covers/solplanet-unipower.png` e vídeo `public/assets/videos/solplanet-unipower.mp4`. O vídeo fornecido de Backup com Baterias está em `public/assets/videos/backup-baterias.mp4` e vinculado ao card correspondente. Os três cards mostram o indicador de play. Para os outros módulos, cadastre uma URL real no campo `videoUrl` para habilitar o player. A plataforma não simula reprodução de vídeo, avaliações, progresso, certificados, usuários ou inscrições.
 
 ## Ferramentas Conecta
 

@@ -17,7 +17,7 @@ export interface VideoCourse {
   coverWidth?: number;
   coverHeight?: number;
   videoUrl?: string;
-  category: 'dimensionamento' | 'offgrid' | 'backup' | 'gestao' | 'hardware' | 'mobilidade' | 'armazenamento';
+  category: 'dimensionamento' | 'offgrid' | 'backup' | 'gestao' | 'hardware' | 'mobilidade' | 'armazenamento' | 'conecta';
 }
 
 export interface TrainingEvent {

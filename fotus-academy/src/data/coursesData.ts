@@ -4,20 +4,26 @@ import { VideoCourse, TrainingEvent, Certificate, CRMLead } from '../types';
 // Add verified video URLs and metadata here when available.
 export const COURSES_DATA: VideoCourse[] = [
   {
-    "id": "dimensionar-hibrido",
-    "title": "Como Dimensionar um Sistema Híbrido",
-    "subtitle": "Inversor híbrido + bateria na prática",
-    "category": "dimensionamento",
+    "id": "conheca-conecta-fotus",
+    "title": "Conheça o Conecta Fotus",
+    "subtitle": "Agendamento online com especialistas da Fotus para tirar dúvidas e conhecer soluções técnicas e comerciais.",
+    "category": "conecta",
     "coverId": 1,
-    "coverUrl": "assets/covers/dimensionar-hibrido.png"
+    "coverUrl": "assets/covers/conheca-conecta-fotus.png",
+    "coverWidth": 941,
+    "coverHeight": 1672,
+    "videoUrl": `${import.meta.env.BASE_URL}assets/videos/conheca-conecta-fotus.mp4`
   },
   {
-    "id": "hibrido-offgrid",
-    "title": "Sistema Híbrido Off-Grid",
-    "subtitle": "Energia mesmo sem a rede",
-    "category": "offgrid",
+    "id": "solplanet-unipower",
+    "title": "Conheça + Solplanet",
+    "subtitle": "Inversor Solplanet + bateria Unipower",
+    "category": "hardware",
     "coverId": 2,
-    "coverUrl": "assets/covers/hibrido-offgrid.png"
+    "coverUrl": "assets/covers/solplanet-unipower.png",
+    "coverWidth": 941,
+    "coverHeight": 1672,
+    "videoUrl": `${import.meta.env.BASE_URL}assets/videos/solplanet-unipower.mp4`
   },
   {
     "id": "backup-baterias",
