@@ -25,7 +25,7 @@ export function HybridCalculator() {
       {!grid ? (
         <div className="p-6 lg:p-8 space-y-6">
           <header>
-            <div className="flex items-center gap-3"><Cpu className="text-[#0d518e]" /><h1 className="text-2xl font-black text-slate-800">Conecta Híbridos</h1></div>
+            <div className="flex items-center gap-3"><Cpu className="text-[#0d518e]" /><h1 className="text-2xl font-black text-slate-800">Dimensionar Híbridos</h1></div>
             <p className="text-sm text-slate-500 mt-2">Escolha a rede para dimensionar as cargas, o inversor e o banco de baterias.</p>
           </header>
           <div className="bg-white border border-slate-200 rounded-3xl p-6 lg:p-8 shadow-sm">

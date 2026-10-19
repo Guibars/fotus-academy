@@ -275,7 +275,7 @@ const SimulationScreen: React.FC<SimulationScreenProps> = ({ equipmentList, setE
                 <div className="text-center mb-10">
                     {/* Título com Kerning 0 */}
                     <h1 className="text-3xl md:text-4xl font-bold text-slate-800 tracking-normal uppercase">
-                        Conecta Híbridos
+                        Dimensionar Híbridos
                     </h1>
                     <div className="h-1 w-20 bg-gradient-to-r from-transparent via-[#FAB515] to-transparent mx-auto mt-2 mb-4 opacity-70"></div>
                 </div>

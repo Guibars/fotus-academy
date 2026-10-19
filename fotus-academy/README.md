@@ -1,6 +1,6 @@
 # Fotus Academy
 
-Portal em React e Vite com módulos de cursos e as ferramentas Conecta Híbridos e Conecta Juros.
+Portal em React e Vite com módulos de cursos e as ferramentas Dimensionar Híbridos e Juros Cartão.
 
 ## Executar
 

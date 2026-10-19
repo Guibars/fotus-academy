@@ -23,7 +23,7 @@ export function InterestCalculator() {
   return (
     <section className="p-6 lg:p-8 space-y-6">
       <header>
-        <div className="flex items-center gap-3"><Calculator className="text-[#0d518e]" /><h1 className="text-2xl font-black text-slate-800">Conecta Juros</h1></div>
+        <div className="flex items-center gap-3"><Calculator className="text-[#0d518e]" /><h1 className="text-2xl font-black text-slate-800">Juros Cartão</h1></div>
         <p className="text-sm text-slate-500 mt-2">Calcule e compare parcelas no cartão de crédito.</p>
       </header>
       <div className="bg-white rounded-3xl p-5 lg:p-8 border border-slate-200 shadow-sm space-y-6">

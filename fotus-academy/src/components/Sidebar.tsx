@@ -12,8 +12,8 @@ interface SidebarProps {
 const tabs = [
   { id: 'dashboard', label: 'Dashboard' },
   { id: 'cursos', label: 'Cursos & Vídeos' },
-  { id: 'hibrido', label: 'Conecta Híbridos' },
-  { id: 'juros', label: 'Conecta Juros' },
+  { id: 'hibrido', label: 'Dimensionar Híbridos' },
+  { id: 'juros', label: 'Juros Cartão' },
   { id: 'agendamento', label: 'Agendar Treinamento' },
 ] as const;
 

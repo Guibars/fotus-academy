@@ -14,8 +14,8 @@ interface DashboardProps {
 
 const shortcuts = [
   { id: 'cursos', label: 'Cursos & Vídeos', description: 'Explore os módulos' },
-  { id: 'hibrido', label: 'Conecta Híbridos', description: 'Dimensione seu sistema' },
-  { id: 'juros', label: 'Conecta Juros', description: 'Simule as parcelas' },
+  { id: 'hibrido', label: 'Dimensionar Híbridos', description: 'Dimensione seu sistema' },
+  { id: 'juros', label: 'Juros Cartão', description: 'Simule as parcelas' },
   { id: 'agendamento', label: 'Treinamentos', description: 'Consulte a programação' },
 ] as const;
 
